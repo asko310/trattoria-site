@@ -11,7 +11,7 @@
   <title>Home</title>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+  <link rel="shortcut icon" type="x-icon" href="imagini/icon.png">
 </head>
 
 <body class="h-screen bg-[#faf5f0]">
@@ -134,7 +134,7 @@
         <!-- Menu items salate -->
         <div id="menu-item-salate" class="w-full md:w-80  flex flex-col items-center p-4">
           <img src="https://palmanova.ro/wp-content/uploads/2020/03/6482-600x390.jpg" alt="salata"
-            class="h-48 mb-2 object-cover w-48  ">
+            class="md:h-48 md:w-48  h-40 w-40 mb-2 object-cover ">
           <h3 class="text-[#1d130a] text-lg font-bold ">Salată Venetia</h3>
           <p class="text-[#1d130a] text-sm  text-center">
             200gr
@@ -145,7 +145,7 @@
 
         <div id="menu-item-salate" class="w-full md:w-80  flex flex-col items-center p-4">
           <img src="https://palmanova.ro/wp-content/uploads/2020/03/6482-600x390.jpg" alt="salata"
-            class="h-48 mb-2 object-cover w-48  ">
+            class="md:h-48 md:w-48  h-40 w-40 mb-2 object-cover  ">
           <h3 class="text-[#1d130a] text-lg font-bold ">Salată Venetia</h3>
           <p class="text-[#1d130a] text-sm  text-center">
             200gr
@@ -159,7 +159,7 @@
         <!-- Menu item pizza-->
         <div id="menu-item-pizza" class="w-full md:w-80 flex flex-col items-center p-4">
           <img src="https://th.bing.com/th/id/R.f87d4128f423cc5d2319eece9f1c0793?rik=tKFBx5BcyRYXdg&pid=ImgRaw&r=0" alt="pizza"
-          class="h-48 mb-2 object-cover w-48 ">
+          class="md:h-48 md:w-48  h-40 w-40 mb-2 object-cover ">
           <h3 class="text-[#1d130a] text-lg font-bold ">Pizza Rancho</h3>
           <p class="text-[#1d130a] text-sm  text-center">
             680 gr,
@@ -170,8 +170,8 @@ ciuperci, ardei, șuncă, salam </p>
 
         <div id="menu-item-pizza" class="w-full md:w-80 flex flex-col items-center p-4">
           <img src="https://industrialpizza.ro/wp-content/uploads/2023/02/Pizza-4-stagione.jpg" alt="salata"
-            class="h-48 mb-2 object-cover w-48  ">
-          <h3 class="text-[#1d130a] text-lg font-bold ">Pizza 4 Anotimpuri</h3>
+            class="md:h-48 md:w-48  h-40 w-40 mb-2 object-cover ">
+          <h3 class="text-[#1d130a] text-lg font-bold text-center">Pizza 4 Anotimpuri</h3>
           <p class="text-[#1d130a] text-sm  text-center">
             680 gr, sos de
             roșii, mozzarella, fileu de pui, șuncă, salam, ciuperci, porumb, ardei, roșii  </p>
@@ -225,14 +225,48 @@ ciuperci, ardei, șuncă, salam </p>
   </script>
 </div>
 
-<div class="flex justify-center pt-20">
+<div class="flex justify-center py-20">
 <button class="bg-[#956841] hover:bg-[#1d130a] text-white font-bold py-2 px-4 ">
   <a href="imagini/meniu.pdf" download>Descarcă Meniu</a>
 </button>
 </div>
 
 
+<footer class="text-2xl overflow-hidden">
+  <marquee direction="right" class="bg-[#956841] ">
+    <div class="font-bold text-[#faf5f0] py-2">
+      - Cristy’s Trattoria - Te așteptăm - Cristy’s Trattoria - Te așteptăm -
+      Cristy’s Trattoria -
+    </div>
+  </marquee>
+  <div class="bg-[#1d130a] h-56 w-full ">
+    <div class=" mx-auto w-full max-w-[1512px] xl:px-[150px] md:px-[200px]">
+      <div class="flex flex-row justify-between py-8 px-4 ">
+        <div class="flex flex-col md:text-start text-center w-full">
+          <div class="font-bold text-white pb-2">
+            Cristy’s Trattoria <sup class="text-white text-base">2023</sup>
+          </div>
+          <div class="text-white flex-col flex text-xl gap-1 md:w-72 w-full">
+            <a href="./contacte.html">Contactează-ne</a>
+            <a href="./despre-noi.html#harta">Unde ne găsești?</a>
+            <a href="./meniu.html">Meniu</a>
+          </div>
+        </div>
+        <div class="[&>*]:text-white text-lg md:block hidden">
+          <p>
+            Telefon Recepție:<br />
+          <p class="p-2 hover:scale-125 transition border-b-[3px] border-[#ebd5b0]">+373 24 833 857</p>
+          </p>
+          <p>
+            Email: <br />
+          <p class="p-2 hover:scale-125 transition border-b-[3px] border-[#ebd5b0]">cristystrattoria@mail.ru</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+</footer>
 
 
 </body>

@@ -11,7 +11,7 @@
   <title>Home</title>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+  <link rel="shortcut icon" type="x-icon" href="imagini/icon.png">
 </head>
 
 <body class="h-screen bg-[#faf5f0]">
@@ -22,17 +22,17 @@
         <img class=" inline md:hidden block w-48 flex  " src="imagini/Logoo.svg">
       </span>
 
-      <span class="text-3xl cursor-pointer mx-8 md:hidden block fill-[#ebd5b0]">
-        <ion-icon name="menu" onclick="Menu(this)" class="fill-[#ebd5b0] stroke-[#243c5a]"
-          style="color: #ebd5b0;"></ion-icon>
+      <span class="text-3xl cursor-pointer mx-8 md:hidden block fill-[#e1c3a7]">
+        <ion-icon name="menu" onclick="Menu(this)" class="fill-[#e1c3a7] stroke-[#243c5a]"
+          style="color: #e1c3a7;"></ion-icon>
       </span>
     </div>
 
     <ul
-      class="font-medium md:flex md:items-center md:static absolute z-50 left-0 w-[1512px] xl:px-[200px] md:opacity-100 opacity-0  transition-all ease-in duration-500 md:flex justify-center  md:py-6  bg-[#1d130a]  ">
+      class="font-medium md:flex md:items-center md:static absolute z-50 left-0 w-[1512px] xl:px-[200px] md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 md:flex justify-center md:py-6  bg-[#1d130a]">
 
-      <li class="mx-4 my-6 md:my-0 ">
-        <a href="index.html" class="link link-underline link-underline-black pb-2 text-xl text-[#ebd5b0]  ">ACASĂ</a>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="index.html" class="link link-underline link-underline-black pb-2 text-xl text-[#ebd5b0] ">ACASĂ</a>
       </li>
       <li class="mx-4 my-6 md:my-0">
         <a href="despre-noi.html" class="link link-underline link-underline-black pb-2 text-xl text-[#ebd5b0] ">DESPRE
@@ -49,9 +49,9 @@
           class="link link-underline link-underline-black pb-2 text-xl text-[#ebd5b0]">CONTACTE</a>
       </li>
       <!--
-        <img src="./imagini/svg1.svg" class=" absolute z-50  object-contain flex justify-center md:hidden " alt="">
-  -->
-      <h2 class=""></h2>
+      <img src="./imagini/svg1.svg" class=" absolute z-50  object-contain flex justify-center md:hidden " alt="">
+-->
+      
     </ul>
 
   </nav>
@@ -158,7 +158,41 @@
     </div>
   </div>
 
-
+  <footer class="text-2xl overflow-hidden">
+    <marquee direction="right" class="bg-[#956841] ">
+      <div class="font-bold text-[#faf5f0] py-2">
+        - Cristy’s Trattoria - Te așteptăm - Cristy’s Trattoria - Te așteptăm -
+        Cristy’s Trattoria -
+      </div>
+    </marquee>
+    <div class="bg-[#1d130a] h-56 w-full ">
+      <div class=" mx-auto w-full max-w-[1512px] xl:px-[150px] md:px-[200px]">
+        <div class="flex flex-row justify-between py-8 px-4 ">
+          <div class="flex flex-col md:text-start text-center w-full">
+            <div class="font-bold text-white pb-2">
+              Cristy’s Trattoria <sup class="text-white text-base">2023</sup>
+            </div>
+            <div class="text-white flex-col flex text-xl gap-1 md:w-72 w-full">
+              <a href="./contacte.html">Contactează-ne</a>
+              <a href="./despre-noi.html#harta">Unde ne găsești?</a>
+              <a href="./meniu.html">Meniu</a>
+            </div>
+          </div>
+          <div class="[&>*]:text-white text-lg md:block hidden">
+            <p>
+              Telefon Recepție:<br />
+            <p class="p-2 hover:scale-125 transition border-b-[3px] border-[#ebd5b0]">+373 24 833 857</p>
+            </p>
+            <p>
+              Email: <br />
+            <p class="p-2 hover:scale-125 transition border-b-[3px] border-[#ebd5b0]">cristystrattoria@mail.ru</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
 
 
 </body>

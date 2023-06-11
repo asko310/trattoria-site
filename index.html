@@ -1,0 +1,499 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="src/input.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Home</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="shortcut icon" type="x-icon" href="imagini/icon.png">
+</head>
+
+<body class="h-screen bg-[#faf5f0]">
+
+  <nav class="bg-[#1d130a]   md:items-center  md:flex  md:justify-center object-contain  md:py-0  text-white">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl  cursor-pointer ">
+        <img class=" inline md:hidden block w-48 flex  " src="imagini/Logoo.svg">
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-8 md:hidden block fill-[#e1c3a7]">
+        <ion-icon name="menu" onclick="Menu(this)" class="fill-[#e1c3a7] stroke-[#243c5a]"
+          style="color: #e1c3a7;"></ion-icon>
+      </span>
+    </div>
+
+    <ul
+      class="font-medium md:flex md:items-center md:static absolute z-50 left-0 w-[1512px] xl:px-[200px] md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 md:flex justify-center md:py-6  bg-[#1d130a]">
+
+      <li class="mx-4 my-6 md:my-0">
+        <a href="index.html" class="link link-underline link-underline-black pb-2 text-xl text-[#ebd5b0] ">ACASĂ</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="despre-noi.html" class="link link-underline link-underline-black pb-2 text-xl text-[#ebd5b0] ">DESPRE
+          NOI</a>
+      </li>
+      <div class="hidden md:block relative w-56">
+        <img class=" md:absolute z-50 w-auto  -top-4" src="imagini/Logo.svg">
+      </div>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="meniu.html" class="link link-underline link-underline-black pb-2 text-xl text-[#ebd5b0]">MENIU</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="contacte.html"
+          class="link link-underline link-underline-black pb-2 text-xl text-[#ebd5b0]">CONTACTE</a>
+      </li>
+      <!--
+      <img src="./imagini/svg1.svg" class=" absolute z-50  object-contain flex justify-center md:hidden " alt="">
+-->
+      
+    </ul>
+
+  </nav>
+
+  <img src="./imagini/svg1.svg" class=" absolute z-40  object-cover flex justify-center top-16 " alt="">
+
+  <script>
+    function Menu(e) {
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
+  <div class="relative  ">
+    <img src="imagini/img3.jpg" alt="burger" class="w-full brightness-[60%] h-[85vh] object-contain object-cover ">
+    <div class="absolute top-1/2 left-1/2 transform  -translate-y-1/2 text-center md:block hidden">
+      <h1 class="text-white text-4xl font-bold bg-[#ebd5b0] text-[#1d130a]  w-full  py-2 -translate-x-2/3 px-4 md:px-0">
+        Cristy’s Trattoria este atelierul de bucate</h1>
+      <h1 class="text-white text-4xl font-bold bg-[#ebd5b0] text-[#1d130a] w-full py-2 -translate-x-1/3 px-4 md:px-0">
+        Unde se mănâncă ca la mama acasă</h1>
+
+    </div>
+    <div class="absolute top-1/2 left-1/2 transform  -translate-y-1/2 text-center md:hidden ">
+      <h1 class="text-white text-3xl font-bold bg-[#ebd5b0] text-[#1d130a]   -translate-x-1/2   px-4 py-4  md:px-0">
+        Cristy’s Trattoria este atelierul de bucate unde se mănâncă ca la mama acasă</h1>
+    </div>
+  </div>
+
+  <h1 class="text-5xl font-bold text-center pt-20 text-[#1d130a] ">Meniul Nostru</h1>
+
+  <div class="grid gap-12 lg:grid-cols-2 pt-20  md:px-[200px] mx-4 mx-auto w-full max-w-[1512px] xl:px-[150px]; px-4">
+    <div class="  group sm:flex space-x-6 bg-[#ebd5b0] justify-around  ">
+      <img src="imagini/img3.jpg" alt="cover" loading="lazy" width="1000" height="667"
+        class="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top  transition duration-500">
+      <div class="md:w-7/12  pl-0 p-5">
+        <div class="space-y-2">
+          <div class="space-y-4">
+            <h4 class="text-2xl font-semibold text-[#1d130a]">Roma Burger</h4>
+            <p class="text-[#1d130a] pr-3 md:pr-0">Laborum saepe laudantium in, voluptates ex placeat quo harum aliquam
+              totam, doloribus eum impedit atque! Temporibus...</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="  group sm:flex space-x-6 bg-[#ebd5b0] justify-around   ">
+      <img src="imagini/img1.jpg" alt="cover" loading="lazy" width="1000" height="667"
+        class="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top  transition duration-500">
+      <div class="md:w-7/12 w-full pl-0 p-5">
+        <div class="space-y-2">
+          <div class="space-y-4">
+            <h4 class="text-2xl font-semibold text-[#1d130a]">Platou Țărănesc</h4>
+            <p class="text-[#1d130a]  pr-3 md:pr-0">Laborum saepe laudantium in, voluptates ex placeat quo harum aliquam
+              totam, doloribus eum impedit atque! Temporibus...</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--meniu pt 2-->
+
+  <div class="grid gap-12 lg:grid-cols-2 pt-12  xl:px-[200px] mx-4  mx-auto w-full max-w-[1512px] xl:px-[150px]; px-4 ">
+    <div class="  group sm:flex space-x-6 bg-[#ebd5b0] justify-around  ">
+      <img src="imagini/img4.jpg" alt="cover" loading="lazy" width="1000" height="667"
+        class="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top  transition duration-500">
+      <div class="md:w-7/12 w-full pl-0 p-5">
+        <div class="space-y-2">
+          <div class="space-y-4">
+            <h4 class="text-2xl font-semibold text-[#1d130a]">Pizza Rancho</h4>
+            <p class="text-[#1d130a]  pr-3 md:pr-0">Laborum saepe laudantium in, voluptates ex placeat quo harum aliquam
+              totam, doloribus eum impedit atque! Temporibus...</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="  group sm:flex space-x-6 bg-[#ebd5b0] justify-around">
+      <img src="imagini/img1.jpg" alt="cover" loading="lazy" width="1000" height="667"
+        class="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top  transition duration-500">
+      <div class="md:w-7/12 w-full pl-0 p-5">
+        <div class="space-y-2">
+          <div class="space-y-4">
+            <h4 class="text-2xl font-semibold text-[#1d130a]">Burger</h4>
+            <p class="text-[#1d130a]  pr-3 md:pr-0">Laborum saepe laudantium in, voluptates ex placeat quo harum aliquam
+              totam, doloribus eum impedit atque! Temporibus...</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center pt-12">
+    <div
+      class="   md:mx-4 mx-8   text-center  font-semibold  text-[#faf5f0] transition ease-in-out delay-150 bg-[#1d130a] hover:-translate-y-1 hover:scale-110 hover:bg-[#956841]  duration-300 p-5  ">
+      <a href="meniu.html">Vezi Meniu Complet</a>
+    </div>
+  </div>
+
+  <!--Recenzii-->
+  <!--
+recenzii
+-->
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <section class="bg-[#1d130a] xl:px-[200px] flex mt-24 mx-auto w-full max-w-[1522px] xl:px-[150px]; ">
+    <div class="mx-auto px-4 md:py-16 py-8 sm:px-6  lg:me-0 lg:pe-0 lg:ps-8">
+      <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16 ">
+        <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-left text-[#ebd5b0] ">
+            Recenziile clienților noștri
+          </h2>
+
+
+
+          <div class="hidden lg:mt-8 lg:flex lg:gap-4 ">
+            <button class="prev-button border border-[#956841] p-3 text-pink-600 hover:bg-[#956841] hover:text-white">
+              <span class="sr-only ">Previous Slide</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#956841"
+                class="h-5 w-5 rtl:rotate-180 hover:stroke-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+
+            <button class="next-button  border border-[#956841] p-3 text-pink-600 hover:bg-[#956841] hover:text-white">
+              <span class="sr-only">Next Slide</span>
+              <svg class="h-5 w-5 rtl:rotate-180 hover:stroke-white" fill="none" stroke="#956841" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="-mx-6 lg:col-span-2 lg:mx-0">
+          <div class="swiper-container !overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <blockquote class="flex h-[270px] flex-col justify-between bg-[#ebd5b0] p-12">
+                  <div>
+                    <div class="flex gap-0.5 text-green-500">
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    </div>
+
+                    <div class="mt-4">
+
+
+                      <p class="mt-4 leading-relaxed text-[#46251a]">
+                        Pizza delicioasa + deservirea plăcuta !!!!
+                        Recomand !!!!🥰😇🌞
+                        <br> </br>
+                      </p>
+                    </div>
+                  </div>
+
+                  <footer class="mt-8 text-sm text-[#956841]">
+                    &mdash; Ludmila Ursu
+                  </footer>
+                </blockquote>
+              </div>
+
+              <div class="swiper-slide">
+                <blockquote class="flex  flex-col justify-between bg-[#ebd5b0] p-12 h-[270px]">
+                  <div>
+                    <div class="flex gap-0.5 text-green-500">
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    </div>
+
+                    <div class="mt-4">
+
+
+                      <p class="mt-4 leading-relaxed text-[#46251a]">
+                        Delicioasă pizza de la Cristy's Trattoria, recomand.
+                        <br> </br>
+
+                    </div>
+                  </div>
+
+                  <footer class="mt-8 text-sm text-[#956841]">
+                    &mdash; Anișoara Botnari
+                  </footer>
+                </blockquote>
+              </div>
+
+              <div class="swiper-slide">
+                <blockquote class="flex h-[270px] flex-col justify-between bg-[#ebd5b0] p-12">
+                  <div>
+                    <div class="flex gap-0.5 text-green-500">
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+
+                      <svg class="h-5 w-5" fill="#956841" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    </div>
+
+                    <div class="mt-4">
+
+
+                      <p class="mt-4 leading-relaxed text-[#46251a]">
+                        Pizza foarte gustoasa,recomand cu toată încrederea,plus deservirea la nivel!!!
+                        <br></br>
+                      </p>
+                    </div>
+                  </div>
+
+                  <footer class="mt-8 text-sm text-[#956841]">
+                    &mdash; Aliona Alexandru Gorobet
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 flex justify-center gap-4 lg:hidden">
+        <button aria-label="Previous slide"
+          class="prev-button border border-[#956841] p-4 text-[#956841] hover:bg-[#956841] hover:text-white">
+          <svg class="h-5 w-5 -rotate-180 transform hover:stroke-white" fill="none" stroke="#956841" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+          </svg>
+        </button>
+
+        <button aria-label="Next slide"
+          class="next-button border border-[#956841] p-4 text-pink-600 hover:bg-[#956841] hover:text-white">
+          <svg class="h-5 w-5 hover:stroke-white" fill="none" stroke="#956841" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Swiper('.swiper-container', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 32,
+        autoplay: {
+          delay: 8000,
+        },
+        breakpoints: {
+          640: {
+            centeredSlides: true,
+            slidesPerView: 1.25,
+          },
+          1024: {
+            centeredSlides: false,
+            slidesPerView: 1.5,
+          },
+        },
+        navigation: {
+          nextEl: '.next-button',
+          prevEl: '.prev-button',
+        },
+      })
+    })
+  </script>
+
+
+  <div class="mt-40 mb-12 md:mb-40 relative mx-auto w-full max-w-[1512px] xl:px-[150px];  md:px-[200px] px-4">
+
+    <div class="flex flex-col md:flex-row gap-12 justify-between ">
+      <div class="md:w-1/2 w-full">
+        <p class="text-4xl text-[#1d130a] font-bold mb-6">Hai să vorbim</p>
+        <p class="text-[#1d130a]">Pentru a lua legătura cu noi, puteți să ne găsiți pe pagina de Facebook sau să
+          sunați la unul dintre numerele noastre de telefon.</p>
+
+        <div class="flex">
+          <a href="https://www.facebook.com/people/Cristys-Trattoria/100083310702223/" class="text  mt-8 text-center
+            font-bold  w-16 cursor-pointer py-2 transition flex flex-row
+            hover:scale-110 hover:fill-[#956841] fill-[#1d130a]">
+            <svg height="48px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="48px" xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z" />
+            </svg>
+          </a>
+
+          <a href="https://www.instagram.com/cristystrattoria/" class=" mt-8 text-center fill-[#1d130a] hover:fill-[#956841]
+          font-bold
+           w-16 cursor-pointer py-2 transition flex flex-row
+          hover:scale-110">
+
+            <svg height="48px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.7 56.7" xml:space="preserve">
+              <g>
+                <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+		c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z" />
+                <circle cx="41.5" cy="16.4" r="2.9" />
+                <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+		h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+		s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+		c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z" />
+              </g>
+            </svg>
+
+          </a>
+
+          <a href="mailto:cristystrattoria@mail.ru" class="text md:mx-2 mx-2 mt-9 text-center fill-[#1d130a] hover:fill-[#956841] 
+      font-bold  w-16 cursor-pointer py-2 transition flex flex-row
+      hover:scale-110">
+            <svg height="48px" id="Layer_1" style="enable-background:new 0 0 56.7 56.7;" version="1.1" width="48px"
+              viewBox="0 0 56.7 56.7" width="48px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="M53.1719,14.5953l0.0011-0.0011l-0.0011,0.0008v-1.184c0-2.2468-1.8384-4.0852-4.0853-4.0852l-0.0012,0.0011l-0.0024,0.0018  l0.0036-0.0029H7.3962l0.0161,0.0131l-0.0161-0.012c-2.2468,0-4.0853,1.8384-4.0853,4.0853v27.9073  c0,2.2468,1.8384,4.0851,4.0853,4.0851h1.4543h38.6578v-0.001c4.2856-0.0498,5.5728-1.1102,5.6702-4.0809L53.1719,14.5953z   M46.0429,10.3258L28.1753,23.487L10.4239,10.3258H46.0429z M9.8608,20.5521l16.5508,11.4004l0.0166,0.0115L9.8513,43.4907  L9.8608,20.5521z M10.2886,44.4046l17.0151-11.8314l0.2985,0.2077c0.1716,0.1194,0.3714,0.1792,0.5712,0.1792  c0.1982,0,0.8773-0.39,0.8773-0.39l17.0197,11.8345H10.2886z M46.4973,43.4836L29.9305,31.9641l9.2394-6.3642l7.3274-5.0472V43.4836  z" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="bg-[#956841] gap-4 flex flex-col md:w-1/2 text-lg w-full text-white py-4 [&>*]:border-white">
+        <p class="text border-b-[3px] font-semibold pl-4">
+          Telefon Recepție: <span class='text-sm font-normal'>(apasă pe număr)</span>
+        </p>
+
+        <a href="tel:+373 24 833 857" class="border-b-[3px] hover:text-[#1d130a] pl-4">+373 24 833 857</a>
+        <a href="tel:+373 60 164 888" class="border-b-[3px] hover:text-[#1d130a] pl-4">+373 60 164 888
+        </a>
+
+
+        <p class="text border-b-[3px] font-semibold pl-4">
+          Email:
+        </p>
+        <a href="mailto:cristystrattoria@mail.ru"
+          class="border-b-[3px]  hover:text-[#1d130a] pl-4">cristystrattoria@mail.ru</a>
+      </div>
+
+    </div>
+  </div>
+   
+
+  <footer class="text-2xl overflow-hidden">
+    <marquee direction="right" class="bg-[#956841] ">
+      <div class="font-bold text-[#faf5f0] py-2">
+        - Cristy’s Trattoria - Te așteptăm - Cristy’s Trattoria - Te așteptăm -
+        Cristy’s Trattoria -
+      </div>
+    </marquee>
+    <div class="bg-[#1d130a] h-56 w-full ">
+      <div class=" mx-auto w-full max-w-[1512px] xl:px-[150px] md:px-[200px]">
+        <div class="flex flex-row justify-between py-8 px-4 ">
+          <div class="flex flex-col md:text-start text-center w-full">
+            <div class="font-bold text-white pb-2">
+              Cristy’s Trattoria <sup class="text-white text-base">2023</sup>
+            </div>
+            <div class="text-white flex-col flex text-xl gap-1 md:w-72 w-full">
+              <a href="/contacte.html">Contactează-ne</a>
+              <a href="./despre-noi.html#harta">Unde ne găsești?</a>
+              <a href="/servicii.html">Meniu</a>
+            </div>
+          </div>
+          <div class="[&>*]:text-white text-lg md:block hidden">
+            <p>
+              Telefon Recepție:<br />
+            <p class="p-2 hover:scale-125 transition border-b-[3px] border-[#ebd5b0]">+373 24 833 857</p>
+            </p>
+            <p>
+              Email: <br />
+            <p class="p-2 hover:scale-125 transition border-b-[3px] border-[#ebd5b0]">cristystrattoria@mail.ru</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

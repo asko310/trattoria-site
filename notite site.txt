@@ -1,0 +1,4 @@
+notite site
+
+1. Add image zoom after hover.
+2. La slider cercurile albe si goale, doar border alb

@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="src/input.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Home</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body class="h-screen bg-[#faf5f0]">
+
+  <nav class="bg-[#1d130a]   md:items-center  md:flex  md:justify-center object-contain  md:py-0  text-white">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl  cursor-pointer ">
+        <img class=" inline md:hidden block w-48 flex  " src="imagini/Logoo.svg">
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-8 md:hidden block fill-[#ebd5b0]">
+        <ion-icon name="menu" onclick="Menu(this)" class="fill-[#ebd5b0] stroke-[#243c5a]"
+          style="color: #ebd5b0;"></ion-icon>
+      </span>
+    </div>
+
+    <ul
+      class="font-medium md:flex md:items-center md:static absolute z-50 left-0 w-full xl:px-[200px] md:opacity-100 opacity-0  transition-all ease-in duration-500 md:flex justify-center  md:py-6  bg-[#1d130a]  ">
+
+      <li class="mx-4 my-6 md:my-0 ">
+        <a href="index.html" class="link link-underline link-underline-black pb-2 text-xl text-[#ebd5b0]  ">ACASĂ</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="despre-noi.html" class="link link-underline link-underline-black pb-2 text-xl text-[#ebd5b0] ">DESPRE
+          NOI</a>
+      </li>
+      <div class="hidden md:block relative w-56">
+        <img class=" md:absolute z-50 w-auto  -top-4" src="imagini/Logo.svg">
+      </div>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="meniu.html" class="link link-underline link-underline-black pb-2 text-xl text-[#ebd5b0]">MENIU</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="contacte.html"
+          class="link link-underline link-underline-black pb-2 text-xl text-[#ebd5b0]">CONTACTE</a>
+      </li>
+      <!--
+        <img src="./imagini/svg1.svg" class=" absolute z-50  object-contain flex justify-center md:hidden " alt="">
+  -->
+      <h2 class=""></h2>
+    </ul>
+
+  </nav>
+
+  <img src="./imagini/svg1.svg" class=" absolute z-40  object-cover flex justify-center top-16  " alt="">
+
+  <script>
+    function Menu(e) {
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
+
+
+
+  <!-- Menu section -->
+  
+  <section class="container mx-auto  md:px-0 mx-auto w-full   ">
+    <div class="relative  ">
+      <img src="imagini/img3.jpg" alt="burger" class="w-full brightness-[60%] h-96 object-contain object-cover ">
+      <div class="absolute top-1/2 transform   text-center">
+        <h1
+          class="text-white text-4xl md:text-5xl font-bold bg-[#ebd5b0] text-[#1d130a]   py-2 px-4  md:ml-16 ml-8 font-bold">
+          MENIUL</h1>
+
+      </div>
+      <div class="absolute md:top-64 top-60 transform   text-center">
+        <h1
+          class="text-white text-4xl md:text-5xl font-bold bg-[#ebd5b0] text-[#1d130a]  py-2 px-4  md:ml-40 ml-24 font-bold">
+          NOSTRU</h1>
+      </div>
+    </div>
+    </div>
+    <div class="mx-auto max-w-[1512px] md:px-[200px]">
+    <!-- Menu categories -->
+    <div class=" ">
+      <!-- Category list -->
+      <ul id="category-list"
+        class="pt-12 w-full md:w-auto flex flex-row md:flex-row overflow-x-auto md:overflow-hidden whitespace-no-wrap md:whitespace-normal space-x-4 md:space-x -0 md:space-y-4">
+        <!-- Category item -->
+        <li id="category-item-all" class="bg-[#1d130a] text-[#faf5f0] px-4 py-2  cursor-pointer active"
+          onclick="showCategory('all')">Toate</li>
+
+        <!-- Category item -->
+        <li id="category-item-salate"
+          class=" text-[#1d130a] px-4 py-2 font-bold cursor-pointer hover:bg-[#1d130a] hover:text-[#faf5f0] duration-300 "
+          onclick="showCategory('salate')">Salate</li>
+
+        <!-- Category item -->
+        <li id="category-item-pizza"
+          class="text-[#1d130a] px-4 py-2 font-bold cursor-pointer hover:bg-[#1d130a] hover:text-[#faf5f0] duration-300"
+          onclick="showCategory('pizza')">Pizza</li>
+
+        <!-- Category item -->
+        <li id="category-item-supe"
+          class="text-[#1d130a] px-4 py-2 font-bold cursor-pointer hover:bg-[#1d130a] hover:text-[#faf5f0] duration-300"
+          onclick="showCategory('supe')">Supe</li>
+
+        <li id="category-item-pasta"
+          class="text-[#1d130a] px-4 py-2 font-bold cursor-pointer hover:bg-[#1d130a] hover:text-[#faf5f0] duration-300"
+          onclick="showCategory('pasta')">Pasta</li>
+
+        <li id="category-item-fast"
+          class="text-[#1d130a] px-4 py-2 font-bold cursor-pointer hover:bg-[#1d130a] hover:text-[#faf5f0] duration-300"
+          onclick="showCategory('fast')">Fast-food</li>
+
+        <li id="category-item-calde"
+          class="text-[#1d130a] px-4 py-2 font-bold cursor-pointer hover:bg-[#1d130a] hover:text-[#faf5f0] duration-300 "
+          onclick="showCategory('calde')">Mâncăruri calde</li>
+
+        <li id="category-item-placinte"
+          class="text-[#1d130a] px-4 py-2 font-bold cursor-pointer hover:bg-[#1d130a] hover:text-[#faf5f0] duration-300 "
+          onclick="showCategory('placinte')">Plăcinte moldovenești</li>
+      </ul>
+
+      <!-- Menu items -->
+      <div id="menu-items" class="w-full grid md:grid-cols-4 grid-cols-2  ">
+
+
+        <!-- Menu items salate -->
+        <div id="menu-item-salate" class="w-full md:w-80  flex flex-col items-center p-4">
+          <img src="https://palmanova.ro/wp-content/uploads/2020/03/6482-600x390.jpg" alt="salata"
+            class="h-48 mb-2 object-cover w-48  ">
+          <h3 class="text-[#1d130a] text-lg font-bold ">Salată Venetia</h3>
+          <p class="text-[#1d130a] text-sm  text-center">
+            200gr
+            roșii, castraveți, ardei grași,
+            frunză mix de salată.</p>
+          <span class="text-[#956841] text-xl font-bold mt-auto">40 lei</span>
+        </div>
+
+        <div id="menu-item-salate" class="w-full md:w-80  flex flex-col items-center p-4">
+          <img src="https://palmanova.ro/wp-content/uploads/2020/03/6482-600x390.jpg" alt="salata"
+            class="h-48 mb-2 object-cover w-48  ">
+          <h3 class="text-[#1d130a] text-lg font-bold ">Salată Venetia</h3>
+          <p class="text-[#1d130a] text-sm  text-center">
+            200gr
+            roșii, castraveți, ardei grași,
+            frunză mix de salată.</p>
+          <span class="text-[#956841] text-xl font-bold mt-auto">40 lei</span>
+        </div>
+
+
+
+        <!-- Menu item pizza-->
+        <div id="menu-item-pizza" class="w-full md:w-80 flex flex-col items-center p-4">
+          <img src="https://th.bing.com/th/id/R.f87d4128f423cc5d2319eece9f1c0793?rik=tKFBx5BcyRYXdg&pid=ImgRaw&r=0" alt="pizza"
+          class="h-48 mb-2 object-cover w-48 ">
+          <h3 class="text-[#1d130a] text-lg font-bold ">Pizza Rancho</h3>
+          <p class="text-[#1d130a] text-sm  text-center">
+            680 gr,
+Sos de roșii, mozarella, roșii,
+ciuperci, ardei, șuncă, salam </p>
+          <span class="text-[#956841] text-xl font-bold mt-auto">115 lei</span>
+        </div>
+
+        <div id="menu-item-pizza" class="w-full md:w-80 flex flex-col items-center p-4">
+          <img src="https://industrialpizza.ro/wp-content/uploads/2023/02/Pizza-4-stagione.jpg" alt="salata"
+            class="h-48 mb-2 object-cover w-48  ">
+          <h3 class="text-[#1d130a] text-lg font-bold ">Pizza 4 Anotimpuri</h3>
+          <p class="text-[#1d130a] text-sm  text-center">
+            680 gr, sos de
+            roșii, mozzarella, fileu de pui, șuncă, salam, ciuperci, porumb, ardei, roșii  </p>
+          <span class="text-[#956841] text-xl font-bold mt-auto">115 lei</span>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Javascript Code -->
+  <script>
+    var menu = document.getElementById('menu');
+    var categoryList = document.getElementById('category-list');
+    var menuItems = document.getElementById('menu-items');
+
+    function toggleMenu() {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('w-full');
+      menu.classList.toggle('h-screen');
+    }
+
+    function showCategory(category) {
+      // Remove active class from all category items
+      for (var i = 0; i < categoryList.children.length; i++) {
+        categoryList.children[i].classList.remove('active');
+      }
+
+      // Add active class to the selected category item
+      var categoryItem = document.getElementById('category-item-' + category);
+      categoryItem.classList.add('active');
+
+      // Show all menu items if category is 'all'
+      if (category === 'all') {
+        for (var i = 0; i < menuItems.children.length; i++) {
+          menuItems.children[i].classList.remove('hidden');
+        }
+      } else {
+        // Hide all menu items
+        for (var i = 0; i < menuItems.children.length; i++) {
+          menuItems.children[i].classList.add('hidden');
+        }
+
+        // Show only the menu items that match the category
+        var matchingItems = document.querySelectorAll('#menu-item-' + category);
+        for (var i = 0; i < matchingItems.length; i++) {
+          matchingItems[i].classList.remove('hidden');
+        }
+      }
+    }
+  </script>
+</div>
+
+<div class="flex justify-center pt-20">
+<button class="bg-[#956841] hover:bg-[#1d130a] text-white font-bold py-2 px-4 ">
+  <a href="imagini/meniu.pdf" download>Descarcă Meniu</a>
+</button>
+</div>
+
+
+
+
+
+</body>
+
+</html>
